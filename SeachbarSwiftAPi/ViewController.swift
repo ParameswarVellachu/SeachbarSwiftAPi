@@ -15,7 +15,7 @@ class ViewController: UITableViewController {
 
     var models = [UserInfo]()
 //    var models = [Model]()
-//    var filteredModels = [UserInfo]() //test
+//    var filteredModels = [UserInfo]()
 
 
     
