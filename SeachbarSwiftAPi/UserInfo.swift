@@ -4,9 +4,7 @@
 //
 //  Created by Veera Reddy on 8/4/18.
 //  Copyright © 2018 Parameswar. All rights reserved.
-//
-
-import Foundation
+// https://jsonplaceholder.typicode.com/todos
 
 import Foundation
 struct UserInfo {

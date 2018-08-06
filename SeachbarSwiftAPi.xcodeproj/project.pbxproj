@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36002C4F211767E6008F8C03 /* PowerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36002C4E211767E6008F8C03 /* PowerModule.swift */; };
 		366B1FC92116143E00E4BFFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B1FC82116143E00E4BFFE /* AppDelegate.swift */; };
 		366B1FCB2116143E00E4BFFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B1FCA2116143E00E4BFFE /* ViewController.swift */; };
 		366B1FCE2116143E00E4BFFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366B1FCC2116143E00E4BFFE /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36002C4E211767E6008F8C03 /* PowerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerModule.swift; sourceTree = "<group>"; };
 		366B1FC52116143E00E4BFFE /* SeachbarSwiftAPi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeachbarSwiftAPi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366B1FC82116143E00E4BFFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		366B1FCA2116143E00E4BFFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				366B1FC82116143E00E4BFFE /* AppDelegate.swift */,
 				366B1FCA2116143E00E4BFFE /* ViewController.swift */,
 				366B1FE02116222B00E4BFFE /* UserInfo.swift */,
+				36002C4E211767E6008F8C03 /* PowerModule.swift */,
 				366B1FCC2116143E00E4BFFE /* Main.storyboard */,
 				366B1FCF2116143E00E4BFFE /* Assets.xcassets */,
 				366B1FD12116143E00E4BFFE /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 				366B1FCB2116143E00E4BFFE /* ViewController.swift in Sources */,
 				366B1FE12116222B00E4BFFE /* UserInfo.swift in Sources */,
 				366B1FC92116143E00E4BFFE /* AppDelegate.swift in Sources */,
+				36002C4F211767E6008F8C03 /* PowerModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
