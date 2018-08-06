@@ -17,8 +17,6 @@ class ViewController: UITableViewController {
 //    var models = [Model]()
 //    var filteredModels = [UserInfo]()
 
-
-    
     let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
