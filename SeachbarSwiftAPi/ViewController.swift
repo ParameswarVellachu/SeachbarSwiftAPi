@@ -10,11 +10,9 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    var PowerModuls = [PowerModule]()
+    var powerModuls = [PowerModule]()
     var filteredModels = [PowerModule]()
-
-    var models = [UserInfo]()
-//    var models = [Model]()
+//    var models = [UserInfo]()
 //    var filteredModels = [UserInfo]()
 
     let searchController = UISearchController(searchResultsController: nil)
@@ -57,9 +55,9 @@ class ViewController: UITableViewController {
                 
                 
                 for dic in jsonArray{
-                    self.PowerModuls.append(PowerModule(dic)) // adding now value in Model array
+                    self.powerModuls.append(PowerModule(dic)) // adding now value in Model array
                 }
-                print(self.PowerModuls[0].BlockName) // 1211
+                print(self.powerModuls[0].BlockName) // 1211
                 
             } catch let parsingError {
                 print("Error", parsingError)
@@ -73,6 +71,7 @@ class ViewController: UITableViewController {
         
     }
     
+    /*
     func call_WebService() {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/todos") else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -103,7 +102,7 @@ class ViewController: UITableViewController {
         task.resume()
         
     }
-   
+   */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -119,7 +118,7 @@ class ViewController: UITableViewController {
         if searchController.isActive && searchController.searchBar.text != "" {
             model = filteredModels[indexPath.row]
         } else {
-            model = PowerModuls[indexPath.row]
+            model = powerModuls[indexPath.row]
         }
         cell.textLabel!.text = "\(model.BlockName)"
         cell.detailTextLabel!.text = model.CampusName
@@ -131,7 +130,7 @@ class ViewController: UITableViewController {
             return filteredModels.count
         }
         
-        return models.count
+        return powerModuls.count
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -185,7 +184,7 @@ class ViewController: UITableViewController {
 //    }
     
     func filterRowsForSearchedText(_ searchText: String) {
-        filteredModels = PowerModuls.filter({( model : PowerModule) -> Bool in
+        filteredModels = powerModuls.filter({( model : PowerModule) -> Bool in
             return model.CampusName.lowercased().contains(searchText.lowercased()) || "\(model.BlockName)".lowercased().contains(searchText.lowercased())
         })
         tableView.reloadData()
